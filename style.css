@@ -1,0 +1,97 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500;700&display=swap');
+:root{
+    --DarkCyan: hsl(158, 36%, 37%);
+    --DarkerCyan: hsl(158, 41%, 18%);
+
+    --Cream: hsl(30, 38%, 92%);
+
+    --VeryDarkBlue: hsl(212, 21%, 14%);
+    --DarkGrayishBlue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html{
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+
+}
+.image-container img{
+    max-width: 350px;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.price{
+    font-family: Fraunces;
+    display: flex;
+}
+p {
+    font-family: Montserrat;
+    color: var(--DarkGrayishBlue);
+    line-height: 160%;
+    padding-right: 1rem;
+}
+h1{
+    font-family: Fraunces;
+    color: var(--VeryDarkBlue);
+    padding-right: 3rem;
+    margin-top: -0.5rem;
+}
+
+.card{
+    margin:10vh ;
+    background-color: var(--White);
+    display: flex;
+    max-width: 666px;
+}
+
+.price h1{
+    color: var(--DarkCyan);
+}
+.first-price{
+    color: var(--DarkGrayishBlue);
+    text-decoration:line-through ;
+    margin-left: -12%;
+}
+.perfume{
+    color: var(--DarkGrayishBlue);
+    letter-spacing: 8px;
+}
+.button{
+    font-family: Montserrat;
+    background-color: var(--DarkCyan);
+    color: var(--White);
+    padding: 16px 0 ;
+    width: 90%;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+.details-container{
+display: flex;
+background-color: var(--White);
+}
+.text-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+.button:hover{
+    background-color: var(--DarkerCyan);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+@media only screen and (max-width: 600px){
+    .card{
+        flex-direction: column;
+    }
+    .image-container img{
+        border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0px;
+    }
+}
